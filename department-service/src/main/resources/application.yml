@@ -1,0 +1,23 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  application:
+    name: department-ws
+  jackson:
+    time-zone: Asia/Kolkata
+  zipkin:
+    base-url: http://127.0.0.1:9411/
+      
+server:
+  port: 8002
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'
+  endpoint:
+    health:
+      show-details: always
